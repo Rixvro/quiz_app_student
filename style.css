@@ -1,8 +1,21 @@
+/* CSS variables */
+:root {
+  --body-bg-color: bisque;
+  --container-bg-color: aquamarine;
+}
 
 /* CSS Setup */
-    /* 1. Select * and set margin and padding to 0, box-sizing to border-box */
-    /* 2. Select body and add a background color */
-    /* 3. Select the container class:
+/* 1. Select * and set margin and padding to 0, box-sizing to border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 2. Select body and add a background color */
+body {
+  background-color: var(--body-bg-color);
+}
+/* 3. Select the container class:
         add a background color
         width to 90%
         max-width to 400px-1200px
@@ -10,7 +23,16 @@
         padding from your choice of recommended 20px-40px
         border-radius optionally to curve your corners 
     */
-    /* 4. Select the btn class:
+.container {
+  background-color: var(--container-bg-color);
+  width: 90%;
+  max-width: 800px;
+  margin: 100px auto 0;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* 4. Select the btn class:
         add a background color
         add a text color
         width to 100% 
@@ -22,7 +44,18 @@
             add a cursor
             add text-align
     */
-    /* 5. Select the next-btn div:
+
+.btn {
+  background-color: whitesmoke;
+  color: black;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* 5. Select the next-btn div:
         add a background color
         add a text color
         width to ~150px
@@ -35,7 +68,41 @@
             add a cursor
             add text-align
     */
-    /* Bonus 0. Add CSS variables with your project color pallette before applying to elements */
-    /* Bonus 1. Select the correct div and add a background color + Select the incorrect div and add a background color */
-    /* Bonus 2. Add container h1 styling and quiz h2 styling */
-    /* Bonus 3. Add on .btn:hover effect */
+#next-btn {
+  background-color: lightslategray;
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 150px;
+  display: none;
+}
+
+/* Bonus 0. Add CSS variables with your project color pallette before applying to elements */
+/* Bonus 1. Select the correct div and add a background color + Select the incorrect div and add a background color */
+/* Bonus 2. Add container h1 styling and quiz h2 styling */
+/* Bonus 3. Add on .btn:hover effect */
+
+h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.btn:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.correct{
+    background: palegreen;
+}
+
+.incorrect{
+    background: salmon;
+}
+
