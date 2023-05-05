@@ -93,9 +93,9 @@ h2 {
   margin: 20px 0;
 }
 
-.btn:hover {
-  background-color: black;
-  color: whitesmoke;
+.btn:hover:not([disabled]){
+    background: black;
+    color: whitesmoke;
 }
 
 .correct{
